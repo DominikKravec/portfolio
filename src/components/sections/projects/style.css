@@ -1,0 +1,7 @@
+#projects {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  padding: 5vh 0;
+  gap: 10vw;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,28 @@
+[
+    {
+        "id": 0,
+        "name": "Health reminder",
+        "description": "This was my graduation project. The project is a React Native app that reminds the users to drink water. It has a simple UI made with nativewind and a reminder system. The app also has a feature to track the user's water intake. The app is designed to be user-friendly and easy to use. The project also uses an appwrite database through which the users authenticate and store their information.",
+        "images": [
+            "/images/zivala.jpg",
+            "/images/pendejo.jpg"
+        ],
+        "links": [
+            {
+                "url": "https://github.com/DominikKravec/ROP",
+                "name": "GitHub repository"
+            }
+        ] 
+    },
+    {
+        "id": 1,
+        "name": "Todo list",
+        "description": "This was the first app I made in React Native. I made to fifamiliarize myself with the way you make apps in this framework. The app serves as a simple todo tracker. It uses an appwrite database to store users and their info. Styling for this app was made with nativewind.",
+        "images": [
+            "/images/zivala.jpg",
+            "/images/pendejo.jpg"
+        ],
+        "links": [
+        ] 
+    }
+]

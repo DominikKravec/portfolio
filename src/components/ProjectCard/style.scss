@@ -1,0 +1,70 @@
+.project-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1vh;
+    .img-container{
+        position: relative;
+        overflow: hidden;
+        height: 15em;
+        width: 20em;
+        border-radius: 20px;
+    }
+    .project-title{
+        text-align: center;
+        p{
+            background: linear-gradient(90deg, rgba(255,64,102,1) 0%, rgb(255, 241, 106) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+    .button-container{
+        display: flex;
+        justify-content: center;
+        a{
+            cursor: pointer;
+            p{
+                background: linear-gradient(90deg, rgba(255,64,102,1) 0%, rgb(255, 241, 106) 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+            background: none;
+            border-radius: 20px;
+            position: relative;
+            padding: 1vh 2.5em;
+            overflow: hidden;
+
+            &::before {
+                content: "";
+                position: absolute;
+                inset: 0;
+                border-radius: 50px; 
+                padding: 2px; 
+                background:linear-gradient(90deg, rgba(255,64,102,1) 0%, rgb(255, 241, 106) 100%); 
+                -webkit-mask: 
+                   linear-gradient(#fff 0 0) content-box, 
+                   linear-gradient(#fff 0 0);
+                -webkit-mask-composite: xor;
+                        mask-composite: exclude; 
+            }
+            &:hover{
+                &::before {
+                    content: none;
+                }
+
+                background: linear-gradient(90deg, rgba(255,64,102,1) 0%, rgb(255, 241, 106) 100%);
+                p{
+                    color: #252525;
+                    background: none;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: #252525;
+                }
+            }
+        }
+    }
+}
+
+.featureImg {
+    width: 100%;
+    height: auto;
+  }
