@@ -10,6 +10,9 @@
     overflow: hidden;
     position: relative;
 }
+.scroller-image {
+    object-fit: contain; /* Ensures the image covers the box without distortion */
+}
 
 .button-wrapper{
     display: grid;

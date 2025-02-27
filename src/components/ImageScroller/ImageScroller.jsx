@@ -39,8 +39,8 @@ export default function ImageScroller({images}) {
                 <Image
                     src={images[currentIndex]}
                     alt={`Slide ${currentIndex + 1}`}
-                    fill={true}
-                    
+                    layout="fill"
+                    objectFit="contain" 
                     className="scroller-image"
                 />
             </div>
