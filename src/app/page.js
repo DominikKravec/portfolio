@@ -51,8 +51,7 @@ export default function Home() {
                     <div id="info-container">
                         <div id="info-text-container">
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea  commodo consequat. Duis aute irure dolor in reprehenderit in voluptate  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint  occaecat cupidatat non proident, sunt in culpa qui officia deserunt  mollit anim id est laborum.
-                            
+                            I’m a recent graduate of the Secondary School of Electrotechnical Engineering in Košice, where I studied programming for four years. Next year, I will continue my studies in programming and app development at Masaryk University in Brno. I’m passionate about web and app development, and my projects include both frontend and backend work.
                             </p>
                         </div>
                     </div>
