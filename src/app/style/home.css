@@ -62,9 +62,27 @@ header #navbar a:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+@media (max-width: 600px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 0 0;
+  }
+  header #logo {
+    text-align: center;
+    width: 100vw;
+  }
+  header #navbar {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+  }
+}
 
 main {
-  margin-top: 20vh;
+  margin-top: 40vh;
 }
 main #introduction {
   background-image: url(../../assets/Images/background.jpg);
@@ -95,12 +113,13 @@ main #introduction #opening-text #text-container {
 }
 main #introduction .img-container {
   position: absolute;
-  margin: auto;
+  margin: 0;
   top: 50%;
   transform: translate(0, -50%);
   right: 5%;
 }
 main #about-me {
+  margin-top: 200px;
   padding: 10vw;
   display: flex;
   flex-direction: column;
@@ -160,6 +179,47 @@ main #contact .contact-box p {
   -webkit-text-fill-color: transparent;
   font-size: larger;
 }
+@media (max-width: 600px) {
+  main {
+    width: 100vw;
+    margin-top: 60%;
+  }
+  main #introduction {
+    margin: 0 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  main #introduction .img-container {
+    /*display: none;*/
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    top: 0;
+    transform: none;
+    right: 0;
+    margin: 20px 0;
+  }
+  main #introduction .img-container img {
+    width: 70vw;
+  }
+  main #introduction #opening-text {
+    -webkit-clip-path: none;
+            clip-path: none;
+  }
+  main #introduction #opening-text #text-container {
+    width: 100vw;
+    text-align: center;
+  }
+  main #about-me .heading-container h1 {
+    text-align: center;
+    width: 100vw;
+  }
+  main #about-me #info-container #info-text-container {
+    padding: 10px 20px;
+  }
+}
 
 .hidden {
   opacity: 0;
@@ -183,6 +243,7 @@ main.projectPage {
   align-content: center;
   height: 100vh;
   padding: 0 15vw;
+  margin: 15vh 0;
 }
 main.projectPage h1 {
   text-align: center;
@@ -248,4 +309,27 @@ main.projectPage .links a:hover p {
   background: none;
   -webkit-background-clip: text;
   -webkit-text-fill-color: #252525;
+}
+@media (max-width: 600px) {
+  main.projectPage h1 {
+    width: 100vw;
+    text-align: center;
+    margin-top: 40%;
+    padding: 0 10px;
+  }
+  main.projectPage #info-text-container {
+    margin: 50px 20px;
+    padding: 50px 20px;
+  }
+  main.projectPage .links {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    display: grid;
+    justify-content: center;
+    overflow-x: hidden;
+  }
 }/*# sourceMappingURL=home.css.map */

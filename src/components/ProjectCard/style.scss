@@ -1,9 +1,10 @@
 .project-card{
-    display: flex;
-    flex-direction: column;
+    display: grid;
     justify-content: center;
+    align-content: center;
     gap: 1vh;
     .img-container{
+
         position: relative;
         overflow: hidden;
         height: 15em;

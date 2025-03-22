@@ -4,6 +4,7 @@
         "name": "Health reminder",
         "description": "This was my graduation project. The project is a React Native app that reminds the users to drink water. It has a simple UI made with nativewind and a reminder system. The app also has a feature to track the user's water intake. The app is designed to be user-friendly and easy to use. The project also uses an appwrite database through which the users authenticate and store their information.",
         "images": [
+            "/images/health-reminder.png",
             "/images/health-reminder_home.jpg",
             "/images/health-reminder_profile.jpg",
             "/images/health-reminder_register.jpg",
@@ -24,9 +25,84 @@
         "name": "Todo list",
         "description": "This was the first app I made in React Native. I made to fifamiliarize myself with the way you make apps in this framework. The app serves as a simple todo tracker. It uses an appwrite database to store users and their info. Styling for this app was made with nativewind.",
         "images": [
-           
+            "/images/todo-list.jpg",
+            "/images/todo-list_add.jpg",
+            "/images/todo-list_pop_up.jpg",
+            "/images/todo-list_sign_in.jpg"
+
         ],
         "links": [
+        ] 
+    },
+    {
+        "id": 2,
+        "name": "Quadratic equation solver",
+        "description": "School project made with JavaFX in my Java class. The app solves quadratic equations and draws quadratic curves of the equations. It uses UI components provided by JavaFX but the graph drawer component was made by me.",
+        "images": [
+            "/images/quadratic-drawer.png",
+            "/images/quadratic-drawer_calculated.png"
+        ],
+        "links": [
+            {
+                "url": "https://github.com/DominikKravec/QuadraticFunctionDrawerJavaFX",
+                "name": "GitHub repository"
+            }
+        ] 
+    },
+    {
+        "id": 3,
+        "name": "Hangman",
+        "description": "School project made with JavaFX in my Java class. It is a simple hangman game. It also uses a word file designed by me and has a class for reading the word file. The UI was made with JavaFx UI components. The words in the file have themes that are used for hints in the game.",
+        "images": [
+            "/images/hangman.png",
+            "/images/hangman_2.png",
+            "/images/hangman_game_over.png",
+            "/images/hangman_win.png",
+            "/images/hangman_hint.png"
+        ],
+        "links": [
+            {
+                "url": "https://github.com/DominikKravec/HangmanJavaFX",
+                "name": "GitHub repository"
+            }
+        ] 
+    },
+    {
+        "id": 4,
+        "name": "Dinosaur game",
+        "description": "This is a personal project made in Unity. Its a simple side scroller game where you have to jump over rocks shoot down birds and duck under clouds. Through this project I learned the basics of making a game in the Unity engine.",
+        "images": [
+            "/images/dinosaur-game.png",
+            "/images/dinosaur-game_options.png",
+            "/images/dinosaur-game_gameplay.png",
+            "/images/dinosaur-game_game_over.png"
+        ],
+        "links": [
+        ] 
+    },
+    {
+        "id": 5,
+        "name": "Temperature Conversion App",
+        "description": "This is a simple Android app made with Java and android studio. It has a very simple UI design made with Figma. The app converts temperatures from Celsius to Fahrenheit and vice versa.",
+        "images": [
+            "/images/temp-convertor.png",
+            "/images/temp-convertor_calculated.png"
+        ],
+        "links": [
+            "https://github.com/DominikKravec/TemperatureConversionAndroid"
+        ] 
+    },
+    {
+        "id": 6,
+        "name": "Bmi Calculator",
+        "description": "This project is an Android app with multiple pages. It has a simple UI design made with Figma. It was programmed in Android Studio with Java. It calculates the BMI of a person based on the input. This project also uses object serialization in Java. ",
+        "images": [
+            "/images/BMIcalc.png",
+            "/images/BMIcalc_filled.png",
+            "/images/BMIcalc_result.png"
+        ],
+        "links": [
+            "https://github.com/DominikKravec/BMIcalculatorAndroid"
         ] 
     }
 ]

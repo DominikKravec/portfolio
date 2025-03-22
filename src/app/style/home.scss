@@ -13,6 +13,9 @@ body{
 }
 
 header{
+
+    
+
     position: fixed;
     z-index: 100;
     background-color: #141414db;
@@ -63,10 +66,30 @@ header{
             transform-origin: bottom left;
         }   
     }
+
+    @media(max-width: 600px){
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        padding: 0 0;
+
+        #logo{
+            text-align: center;
+            width: 100vw;
+        }
+
+        #navbar{
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+        }
+
+    }
 }
 
 main{
-    margin-top: 20vh;
+    margin-top: 40vh;
     #introduction{
         background-image: url(../../assets/Images/background.jpg);
         background-size: cover;
@@ -96,13 +119,14 @@ main{
 
         .img-container{
             position: absolute;
-            margin: auto;
+            margin: 0;
             top: 50%;
             transform: translate(0, -50%);
             right: 5%
         }
     }
     #about-me{
+        margin-top: 200px;
         padding: 10vw;
         display: flex;
         flex-direction: column;
@@ -173,6 +197,57 @@ main{
             }
         }    
     }
+
+    @media(max-width: 600px){
+        width: 100vw;
+        margin-top: 60%;
+
+        #introduction{
+            margin: 0 10px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column-reverse;
+
+            .img-container{
+                /*display: none;*/
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                top: 0;
+                transform: none;
+                right: 0;
+                margin: 20px 0;
+                img{
+                    width: 70vw;
+                }
+            }
+
+            #opening-text{
+                #text-container{
+                    width: 100vw;
+                    text-align: center;
+                }
+                clip-path: none;
+            }
+        }
+
+        #about-me{
+            .heading-container{
+                h1{
+                    text-align: center;
+                    width: 100vw;
+                }
+            }
+
+            #info-container{
+                #info-text-container{
+                    padding: 10px 20px;
+                }
+            }
+        }
+
+    }
 }
 
 .hidden {
@@ -197,6 +272,7 @@ main.projectPage{
     align-content: center;
     height: 100vh;
     padding: 0 15vw;
+    margin: 15vh 0;
 
     h1{
         text-align: center;
@@ -269,4 +345,32 @@ main.projectPage{
             }
         }
     }
+
+    @media(max-width: 600px){
+        h1{
+            width: 100vw;
+            text-align: center;
+            margin-top: 40%;
+            padding: 0 10px;
+        }
+
+        #info-text-container{
+            margin: 50px 20px;
+            padding: 50px 20px;
+        }
+
+        .links{
+            padding: 20px;
+        }
+    }
+}
+
+@media(max-width: 600px){
+
+    body{
+        display: grid;
+        justify-content: center;
+        overflow-x: hidden;
+    }
+
 }

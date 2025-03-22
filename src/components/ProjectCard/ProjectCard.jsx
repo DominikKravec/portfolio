@@ -16,6 +16,8 @@ export default function ProjectCard({project}) {
                     src={project.images[0]} 
                     alt="project"
                     fill={true}
+                    layout="fill"
+                    objectFit="cover" 
                     className="featureImg"
                 />
             </div>

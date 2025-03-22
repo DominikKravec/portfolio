@@ -3,12 +3,29 @@
   justify-content: center;
   gap: 20px;
 }
+@media (max-width: 600px) {
+  .image-scroller {
+    width: 100vw;
+    padding: 0 10px;
+    flex-direction: column;
+  }
+}
 
 .image-wrapper {
   height: 400px;
   width: 600px;
   overflow: hidden;
   position: relative;
+}
+@media (max-width: 600px) {
+  .image-wrapper {
+    width: 100vw;
+  }
+}
+
+.scroller-image {
+  -o-object-fit: contain;
+     object-fit: contain; /* Ensures the image covers the box without distortion */
 }
 
 .button-wrapper {
@@ -57,4 +74,63 @@
   background: none;
   -webkit-background-clip: text;
   -webkit-text-fill-color: #252525;
+}
+@media (max-width: 600px) {
+  .button-wrapper {
+    display: none;
+  }
+}
+
+.phone-button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 20px;
+}
+.phone-button-wrapper .button {
+  position: relative;
+  display: grid;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  padding: 5px;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  transition: 1s;
+}
+.phone-button-wrapper .button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50px;
+  padding: 2px;
+  background: linear-gradient(90deg, rgb(255, 64, 102) 0%, rgb(255, 241, 106) 100%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+.phone-button-wrapper .button p {
+  text-align: center;
+  background: linear-gradient(-90deg, rgb(255, 64, 102) 0%, rgb(255, 241, 106) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2rem;
+}
+.phone-button-wrapper .button:hover {
+  background: linear-gradient(90deg, rgb(255, 64, 102) 0%, rgb(255, 241, 106) 100%);
+}
+.phone-button-wrapper .button:hover::before {
+  content: none;
+}
+.phone-button-wrapper .button:hover p {
+  color: #252525;
+  background: none;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #252525;
+}
+@media (min-width: 600px) {
+  .phone-button-wrapper {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */

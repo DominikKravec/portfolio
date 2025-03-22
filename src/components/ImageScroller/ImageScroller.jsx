@@ -53,6 +53,20 @@ export default function ImageScroller({images}) {
                     </p>
                 </button>
             </div>
+
+            <div className="phone-button-wrapper">
+                <button onClick={handlePrev} className="button">
+                    <p>
+                        {'<'}
+                    </p>
+                </button>
+                <button onClick={handleNext} className="button">  
+                    <p>
+                        {'>'}
+                    </p>
+                </button>
+            </div>
+
         </div>
     );
 }
