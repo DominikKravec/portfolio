@@ -5,6 +5,7 @@ import React, { useEffect, useState } from 'react'
 import '../../style/home.css'
 import ImageScroller from '@/components/ImageScroller/ImageScroller'
 import { useParams } from 'next/navigation'
+import UsedTechnology from '@/components/UsedTechnology/UsedTechnology'
 
 export default function ProjectPage() {
 
@@ -49,6 +50,27 @@ export default function ProjectPage() {
                         images={project.images}
                     />
                 )}
+
+                <section id='used-technologies'>
+
+                    {project.technologies && (
+
+                        project.technologies.map((tech) => {
+                            return(
+                                <UsedTechnology
+                                    name={tech}
+                                    key={tech}
+                                />      
+                            )
+                        })
+
+                        
+                    )
+                    }
+                    
+                </section>
+
+                
 
                 <div id="info-text-container">
                     <p>

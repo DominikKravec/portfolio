@@ -331,7 +331,7 @@ main.projectPage{
 
     #info-text-container{
         margin-top: 2rem;
-        padding: 3rem 8rem;
+        padding: 3rem 5rem;
         background-color: #4c4c4c24;
         border-radius: 20px;
         p{
@@ -342,6 +342,14 @@ main.projectPage{
             font-size: 1.2rem;
             font-weight: lighter;
         }                
+    }
+
+    #used-technologies{
+        display: flex;
+        gap: 10px;
+        padding: 40px 0;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 
     .links{
@@ -403,7 +411,7 @@ main.projectPage{
         }
 
         #info-text-container{
-            margin: 50px 20px;
+            margin: 0px 20px;
             padding: 50px 20px;
         }
 

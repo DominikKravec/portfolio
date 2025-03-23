@@ -4,6 +4,7 @@ import React from 'react'
 import "./style.css"
 import Image from "next/image";
 import { useRouter } from 'next/navigation';
+import UsedTechnology from '../UsedTechnology/UsedTechnology';
 
 export default function ProjectCard({project}) {
 

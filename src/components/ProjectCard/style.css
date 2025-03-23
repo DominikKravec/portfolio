@@ -18,6 +18,7 @@
   background: linear-gradient(90deg, rgb(255, 64, 102) 0%, rgb(255, 241, 106) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-size: 1.5rem;
 }
 .project-card .button-container {
   display: flex;

@@ -7,7 +7,7 @@ import { useRef } from "react";
 const ScrollReveal = ({ children }) => {
   const ref = useRef(null);
   // Adjust threshold to 0.5 (50% of the element must be visible)
-  const isInView = useInView(ref, { once: true, threshold: 0.1, margin: "0px 0px -300px 0px" });
+  const isInView = useInView(ref, { once: true, threshold: 0.1, margin: "0px 0px -250px 0px" });
 
   return (
     <motion.div

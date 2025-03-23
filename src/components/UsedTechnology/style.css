@@ -1,0 +1,13 @@
+.used-technology {
+  background-color: rgba(76, 76, 76, 0.1411764706);
+  width: auto;
+  padding: 10px 20px;
+  border-radius: 50000px;
+  text-align: center;
+}
+.used-technology span {
+  font-size: 1.25rem;
+  background: linear-gradient(-90deg, rgb(255, 64, 102) 0%, rgb(255, 241, 106) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}/*# sourceMappingURL=style.css.map */

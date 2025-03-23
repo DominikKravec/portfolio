@@ -1,0 +1,13 @@
+.used-technology{
+    background-color: #4c4c4c24;
+    width: auto;
+    padding: 10px 20px;
+    border-radius: 50000px;
+    text-align: center;
+    span{
+        font-size: 1.25rem;
+        background: linear-gradient(-90deg, rgba(255,64,102,1) 0%, rgba(255,241,106,1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}

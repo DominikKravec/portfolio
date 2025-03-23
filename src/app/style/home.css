@@ -290,7 +290,7 @@ main.projectPage h1 {
 }
 main.projectPage #info-text-container {
   margin-top: 2rem;
-  padding: 3rem 8rem;
+  padding: 3rem 5rem;
   background-color: rgba(76, 76, 76, 0.1411764706);
   border-radius: 20px;
 }
@@ -301,6 +301,13 @@ main.projectPage #info-text-container p {
   -webkit-text-fill-color: transparent;
   font-size: 1.2rem;
   font-weight: lighter;
+}
+main.projectPage #used-technologies {
+  display: flex;
+  gap: 10px;
+  padding: 40px 0;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 main.projectPage .links {
   display: flex;
@@ -355,7 +362,7 @@ main.projectPage .links a:hover p {
     padding: 0 10px;
   }
   main.projectPage #info-text-container {
-    margin: 50px 20px;
+    margin: 0px 20px;
     padding: 50px 20px;
   }
   main.projectPage .links {

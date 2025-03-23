@@ -30,10 +30,10 @@ export default function Projects() {
             projects ? projects.map(
                 (project) => (
                     <ScrollReveal>
-                <ProjectCard
-                    key={project.id}
-                    project={project}
-                />
+                        <ProjectCard
+                            key={project.id}
+                            project={project}
+                        />
                     </ScrollReveal>
 
                 )

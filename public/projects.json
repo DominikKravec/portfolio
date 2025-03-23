@@ -13,6 +13,15 @@
             "/images/health-reminder_drinks.jpg",
             "/images/health-reminder_darkMode.jpg"
         ],
+        "technologies": [
+            "JavaScript", 
+            "React Native",
+            "Appwrite", 
+            "Node.js",
+            "Expo", 
+            "Nativewind", 
+            "Figma"
+        ],
         "links": [
             {
                 "url": "https://github.com/DominikKravec/ROP",
@@ -31,6 +40,14 @@
             "/images/todo-list_sign_in.jpg"
 
         ],
+        "technologies": [
+            "JavaScript", 
+            "React Native",
+            "Appwrite", 
+            "Node.js",
+            "Expo", 
+            "Nativewind"
+        ],
         "links": [
         ] 
     },
@@ -41,6 +58,11 @@
         "images": [
             "/images/quadratic-drawer.png",
             "/images/quadratic-drawer_calculated.png"
+        ],
+        "technologies": [
+            "Java", 
+            "JavaFX",
+            "CSS"
         ],
         "links": [
             {
@@ -60,6 +82,11 @@
             "/images/hangman_win.png",
             "/images/hangman_hint.png"
         ],
+        "technologies": [
+            "Java",
+            "JavaFX",
+            "CSS"
+        ],
         "links": [
             {
                 "url": "https://github.com/DominikKravec/HangmanJavaFX",
@@ -77,6 +104,10 @@
             "/images/dinosaur-game_gameplay.png",
             "/images/dinosaur-game_game_over.png"
         ],
+        "technologies": [
+            "Unity", 
+            "C#"
+        ],
         "links": [
         ] 
     },
@@ -87,6 +118,12 @@
         "images": [
             "/images/temp-convertor.png",
             "/images/temp-convertor_calculated.png"
+        ],
+        "technologies": [
+            "Java",
+            "Android Studio",
+            "XML",
+            "Figma"
         ],
         "links": [
             "https://github.com/DominikKravec/TemperatureConversionAndroid"
@@ -100,6 +137,12 @@
             "/images/BMIcalc.png",
             "/images/BMIcalc_filled.png",
             "/images/BMIcalc_result.png"
+        ],
+        "technologies": [
+            "Java",
+            "Android Studio",
+            "XML",
+            "Figma"
         ],
         "links": [
             "https://github.com/DominikKravec/BMIcalculatorAndroid"
