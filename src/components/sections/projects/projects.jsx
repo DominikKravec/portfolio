@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react'
 import ProjectCard from "@/components/ProjectCard/ProjectCard";
 import images from '../../../constants/images'
 import './style.css'
+import ScrollReveal from '@/components/Scrollreveal/ScrollReveal';
 
 export default function Projects() {
 
@@ -28,10 +29,13 @@ export default function Projects() {
         {
             projects ? projects.map(
                 (project) => (
-                    <ProjectCard
-                        key={project.id}
-                        project={project}
-                    />
+                    <ScrollReveal>
+                <ProjectCard
+                    key={project.id}
+                    project={project}
+                />
+                    </ScrollReveal>
+
                 )
             ) : (<></>)
         }

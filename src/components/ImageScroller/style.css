@@ -75,7 +75,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: #252525;
 }
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .button-wrapper {
     display: none;
   }

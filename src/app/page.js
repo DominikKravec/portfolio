@@ -24,7 +24,16 @@ export default function Home() {
         <main>
 
             <ScrollReveal>
+                <div id="opening-text-phone">
+                    <div id="text-container-phone">
+                        Web and app development
+                    </div>
+                </div>
+
                 <section id="introduction" className="">
+
+             
+
                     <div id="opening-text">
                         <div id="text-container">
                             Web and app development
@@ -59,9 +68,9 @@ export default function Home() {
 
             </ScrollReveal>
            
-            <ScrollReveal>
-                <Projects/>
-            </ScrollReveal>
+            
+            <Projects/>
+            
             
 
             <section id="contact">
