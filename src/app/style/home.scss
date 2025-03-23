@@ -128,7 +128,9 @@ main{
             height: 100%;
             display: flex;
             align-content: center;
+            
             #text-container{
+                text-align: center;
                 font-size: 3em;
                 background: none;
                 background: linear-gradient(135deg, rgba(255,64,102,1) 0%, rgba(255,241,106,1) 100%);
@@ -160,6 +162,7 @@ main{
         flex-direction: column;
         justify-content: center;                        
         align-items: center;
+        
         .heading-container{
             h1{
                 text-align: center;
@@ -250,7 +253,6 @@ main{
             margin: 0 10px;
             border-radius: 10px;
             display: flex;
-            flex-direction: column-reverse;
             justify-content: center;
             align-content: center;
 
@@ -264,9 +266,7 @@ main{
                 transform: none;
                 right: 0;
                 margin: 20px 0;
-                img{
-                    width: 70vw;
-                }
+                width: 80vw;
             }
 
             #opening-text{
@@ -289,6 +289,7 @@ main{
 
             #info-container{
                 #info-text-container{
+                    text-align: center;
                     padding: 10px 20px;
                 }
             }

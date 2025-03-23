@@ -40,13 +40,13 @@ export default function Home() {
                         </div>
                     </div>
                     <div className="img-container">
-                    <Image
-                        src={icons.code}
-                        alt='code'
-                        width={300}
-                        height={300}
-                        className="featureImg"
-                    />
+                        <Image
+                            src={icons.code}
+                            alt='code'
+                            layout="fill"
+                            objectFit="contain" 
+                            className="featureImg"
+                        />
                     </div>
                 </section>
 

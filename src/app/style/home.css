@@ -120,6 +120,7 @@ main #introduction #opening-text {
           clip-path: polygon(0% 0%, 45% 0%, 60% 100%, 0% 100%);
 }
 main #introduction #opening-text #text-container {
+  text-align: center;
   font-size: 3em;
   background: none;
   background: linear-gradient(135deg, rgb(255, 64, 102) 0%, rgb(255, 241, 106) 100%);
@@ -221,7 +222,6 @@ main #contact .contact-box p {
     margin: 0 10px;
     border-radius: 10px;
     display: flex;
-    flex-direction: column-reverse;
     justify-content: center;
     align-content: center;
   }
@@ -235,9 +235,7 @@ main #contact .contact-box p {
     transform: none;
     right: 0;
     margin: 20px 0;
-  }
-  main #introduction .img-container img {
-    width: 70vw;
+    width: 80vw;
   }
   main #introduction #opening-text {
     display: none;
@@ -253,6 +251,7 @@ main #contact .contact-box p {
     width: 100vw;
   }
   main #about-me #info-container #info-text-container {
+    text-align: center;
     padding: 10px 20px;
   }
 }
