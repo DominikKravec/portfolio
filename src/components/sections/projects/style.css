@@ -5,7 +5,7 @@
   padding: 5vh 0;
   gap: 10vw;
 }
-@media (max-width: 900px) {
+@media (max-width: 600px) {
   #projects {
     margin: 50px 0;
     grid-template-columns: 1fr;

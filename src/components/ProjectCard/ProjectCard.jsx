@@ -26,7 +26,7 @@ export default function ProjectCard({project}) {
                 <p>{project.name}</p>
             </div>
             <div className="button-container">
-                <a className="more-button" 
+                <a className="button" 
                     onClick={() => {
                         console.log("aaaa")
                         router.push("/project/" + project.id)

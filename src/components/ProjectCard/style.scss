@@ -33,8 +33,9 @@
             background: none;
             border-radius: 20px;
             position: relative;
-            padding: 1vh 2.5em;
+            padding: 0.5rem 2.5em;
             overflow: hidden;
+            transition: 0.1s ease-in;
 
             &::before {
                 content: "";
@@ -50,6 +51,7 @@
                         mask-composite: exclude; 
             }
             &:hover{
+                padding: 0.6rem 2.6em;
                 &::before {
                     content: none;
                 }

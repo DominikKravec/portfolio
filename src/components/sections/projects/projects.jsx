@@ -24,23 +24,24 @@ export default function Projects() {
     }, [])
 
   return (
-    <section id="projects" className="">
-        
-        {
-            projects ? projects.map(
-                (project) => (
-                    <ScrollReveal>
-                        <ProjectCard
-                            key={project.id}
-                            project={project}
-                        />
-                    </ScrollReveal>
+    <>
+        <section id="projects" className="">
+            {
+                projects ? projects.map(
+                    (project) => (
+                        <ScrollReveal>
+                            <ProjectCard
+                                key={project.id}
+                                project={project}
+                            />
+                        </ScrollReveal>
 
-                )
-            ) : (<></>)
-        }
-        
-        
-    </section>
+                    )
+                ) : (<></>)
+            }
+            
+            
+        </section>
+    </>
   )
 }
