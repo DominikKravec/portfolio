@@ -33,13 +33,13 @@ export default function ImageScroller({ images }) {
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               fill="none"
-              stroke="url(#gradient)"
+              stroke={`url(#gradient-prev-${currentIndex})`}
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
             >
               <defs>
-                <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                <linearGradient id={`gradient-prev-${currentIndex}`} x1="0%" y1="0%" x2="100%" y2="0%">
                   <stop offset="0%" stopColor="rgba(255, 64, 102, 1)" />
                   <stop offset="100%" stopColor="rgb(255, 241, 106)" />
                 </linearGradient>
@@ -73,13 +73,13 @@ export default function ImageScroller({ images }) {
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               fill="none"
-              stroke="url(#gradient)"
+              stroke={`url(#gradient-next-${currentIndex})`}
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
             >
               <defs>
-                <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                <linearGradient id={`gradient-next-${currentIndex}`} x1="0%" y1="0%" x2="100%" y2="0%">
                   <stop offset="0%" stopColor="rgba(255, 64, 102, 1)" />
                   <stop offset="100%" stopColor="rgb(255, 241, 106)" />
                 </linearGradient>
@@ -105,13 +105,13 @@ export default function ImageScroller({ images }) {
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             fill="none"
-            stroke="url(#gradient)"
+            stroke={`url(#gradient-phone-prev-${currentIndex})`}
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
           >
             <defs>
-              <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+              <linearGradient id={`gradient-phone-prev-${currentIndex}`} x1="0%" y1="0%" x2="100%" y2="0%">
                 <stop offset="0%" stopColor="rgba(255, 64, 102, 1)" />
                 <stop offset="100%" stopColor="rgb(255, 241, 106)" />
               </linearGradient>
@@ -125,13 +125,13 @@ export default function ImageScroller({ images }) {
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             fill="none"
-            stroke="url(#gradient)"
+            stroke={`url(#gradient-phone-next-${currentIndex})`}
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
           >
             <defs>
-              <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+              <linearGradient id={`gradient-phone-next-${currentIndex}`} x1="0%" y1="0%" x2="100%" y2="0%">
                 <stop offset="0%" stopColor="rgba(255, 64, 102, 1)" />
                 <stop offset="100%" stopColor="rgb(255, 241, 106)" />
               </linearGradient>

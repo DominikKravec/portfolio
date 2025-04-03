@@ -357,7 +357,6 @@ main.projectPage .links a:hover p {
   main.projectPage h1 {
     width: 100vw;
     text-align: center;
-    margin-top: 250px;
     padding: 0 10px;
   }
   main.projectPage #info-text-container {
