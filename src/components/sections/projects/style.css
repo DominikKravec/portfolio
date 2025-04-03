@@ -1,14 +1,71 @@
-#projects {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  justify-content: center;
+.projects-section {
+  background: url(../../../assets/Images/background.jpg);
+  background-size: cover;
+  box-shadow: inset 0px 0px 24px 14px rgba(0, 0, 0, 0.5);
   padding: 5vh 0;
-  gap: 10vw;
+  margin-bottom: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carousel-container {
+  background-color: #141414;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 900px; /* Matches your previous carousel width */
+  height: 400px; /* Adjust based on ProjectCard height */
+  overflow: hidden;
+  position: relative;
 }
 @media (max-width: 600px) {
-  #projects {
-    margin: 50px 0;
-    grid-template-columns: 1fr;
+  .carousel-container {
+    max-width: 100%;
     padding: 0 20px;
+  }
+}
+
+.carousel-inner {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  transition: transform 0.5s ease-in-out; /* Smooth scroll transition */
+}
+
+.carousel-item {
+  flex: 0 0 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.indicators {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Space between carousel and indicators */
+  gap: 10px;
+}
+
+.indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+.indicator.active {
+  background-color: #141414; /* Matches your previous color scheme */
+}
+.indicator:hover {
+  background-color: rgba(20, 20, 20, 0.662745098);
+}
+
+@media (max-width: 600px) {
+  .projects-section {
+    margin: 50px 0;
+    padding: 0;
   }
 }/*# sourceMappingURL=style.css.map */
