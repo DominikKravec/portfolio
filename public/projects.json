@@ -23,10 +23,7 @@
             "Figma"
         ],
         "links": [
-            {
-                "url": "https://github.com/DominikKravec/ROP",
-                "name": "GitHub repository"
-            }
+            
         ] 
     },
     {
@@ -126,7 +123,10 @@
             "Figma"
         ],
         "links": [
-            "https://github.com/DominikKravec/TemperatureConversionAndroid"
+            {
+                "url": "https://github.com/DominikKravec/TemperatureConversionAndroid",
+                "name": "GitHub"
+            }
         ] 
     },
     {
@@ -144,8 +144,42 @@
             "XML",
             "Figma"
         ],
+        "links": [ 
+            {
+                "url": "https://github.com/DominikKravec/BMIcalculatorAndroid",
+                "name": "GitHub"
+            }
+            
+        ] 
+    },
+    {
+        "id": 7,
+        "name": "Bookstore Manager",
+        "description": "I made this project as an introduction to laravel. The project has simple CRUD operations. It is a simple bookstore manager/e-shop. The app has simple authentication, where you can login, register and logout. It offers a page with all the books in the store where as a normal user you can view details and order books. If you login as an admin you have the option to add, delete and update books and authors.",
+        "images": [
+            "/images/bookstore-manager.png",
+            "/images/bookstore-manager_book_details.png",
+            "/images/bookstore-manager_author_details.png",
+            "/images/bookstore-manager_admin.png",
+            "/images/bookstore-manager_book_add.png",
+            "/images/bookstore-manager_author_add.png",
+            "/images/bookstore-manager_login.png",
+            "/images/bookstore-manager_register.png"
+        ],
+        "technologies": [
+            "Laravel",
+            "PHP",
+            "Tailwind CSS",
+            "Blade",
+            "Node.js"
+
+        ],
         "links": [
-            "https://github.com/DominikKravec/BMIcalculatorAndroid"
+            {
+                "url": "https://github.com/DominikKravec/bookStoreLaravel",
+                "name": "GitHub"
+            }
+            
         ] 
     }
 ]
