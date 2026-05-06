@@ -19,8 +19,7 @@ export default function ProjectCard({project}) {
                     src={project.images[0]} 
                     alt="project"
                     fill={true}
-                    layout="fill"
-                    objectFit="cover" 
+                    style={{ objectFit: 'cover' }} /* Replaced deprecated objectFit prop */
                     className="featureImg"
                 />
             </div>
@@ -31,8 +30,9 @@ export default function ProjectCard({project}) {
 
                 {project.technologies && (
                     <div className="project-technologies">
-                        {techs.map(tech => (
+                        {techs.map((tech, index) => (
                             <UsedTechnology
+                                key={index}
                                 name={tech}
                             />
                         ))}
@@ -52,7 +52,6 @@ export default function ProjectCard({project}) {
                 <div className="button-container">
                     <a className="button" 
                         onClick={() => {
-                            console.log("aaaa")
                             router.push("/project/" + project.id)
                         }}
                     >

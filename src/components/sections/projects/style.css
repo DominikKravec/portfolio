@@ -1,71 +1,80 @@
 .projects-section {
-  background: url(../../../assets/Images/background.jpg);
-  background-size: cover;
-  box-shadow: inset 0px 0px 24px 14px rgba(0, 0, 0, 0.5);
-  padding: 5vh 0;
+  padding: 10vh 10vw; 
   margin-bottom: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.carousel-container {
   background-color: #141414;
-  border-radius: 30px;
+}
+
+/* --- NEW: Styling the Projects H1 to match About Me --- */
+.projects-section .heading-container {
   width: 100%;
-  max-width: 900px; /* Matches your previous carousel width */
-  height: 400px; /* Adjust based on ProjectCard height */
-  overflow: hidden;
-  position: relative;
-}
-@media (max-width: 600px) {
-  .carousel-container {
-    max-width: 100%;
-    padding: 0 20px;
-  }
+  display: flex;
+  justify-content: start;
+  margin-bottom: 4rem; /* Adds some breathing room between the title and the first project */
 }
 
-.carousel-inner {
-  display: flex;
-  flex-direction: row;
-  height: 100%;
-  transition: transform 0.5s ease-in-out; /* Smooth scroll transition */
+.projects-section .heading-container h1 {
+  text-align: center;
+  font-size: 3em;
+  background: linear-gradient(90deg, rgb(255, 64, 102) 0%, rgb(255, 241, 106) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
+/* -------------------------------------------------------- */
 
-.carousel-item {
-  flex: 0 0 100%;
-  height: 100%;
+.projects-container {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  gap: 120px; 
+  width: 100%;
+  max-width: 100%; 
   align-items: center;
 }
 
-.indicators {
+.project-item {
+  width: 100%; 
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  margin-top: 20px; /* Space between carousel and indicators */
-  gap: 10px;
 }
 
-.indicator {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.3);
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
-}
-.indicator.active {
-  background-color: #141414; /* Matches your previous color scheme */
-}
-.indicator:hover {
-  background-color: rgba(20, 20, 20, 0.662745098);
+.project-item img,
+.project-item video {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
 }
 
-@media (max-width: 600px) {
+/* 
+  Overrides gradients ONLY on headings and description paragraphs.
+  - Removed h1 so your new Projects title keeps its gradient.
+  - Fixed the missing dot on .project-title p 
+*/
+.projects-section h2,
+.projects-section h3,
+.projects-section p:not(a p, button p, .project-title p) {
+  background: none !important;
+  -webkit-background-clip: unset !important;
+  -webkit-text-fill-color: unset !important;
+  color: var(--font-color) !important;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
   .projects-section {
-    margin: 50px 0;
-    padding: 20px;
+    padding: 8vh 20px;
+    margin-bottom: 5vh;
   }
-}/*# sourceMappingURL=style.css.map */
+
+  .projects-section .heading-container {
+    margin-bottom: 2rem;
+  }
+  
+  .projects-container {
+    gap: 60px; 
+  }
+}

@@ -18,39 +18,10 @@ export default function Home() {
             <div id="navbar">
                 <a href="#about-me">About me</a>
                 <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
+                <a href="https://github.com/DominikKravec/">GitHub</a>
             </div>
         </header>
         <main>
-
-            <ScrollReveal>
-                <div id="opening-text-phone">
-                    <div id="text-container-phone">
-                        Web and app development
-                    </div>
-                </div>
-
-                <section id="introduction" className="">
-
-             
-
-                    <div id="opening-text">
-                        <div id="text-container">
-                            Web and app development
-                        </div>
-                    </div>
-                    <div className="img-container">
-                        <Image
-                            src={icons.code}
-                            alt='code'
-                            layout="fill"
-                            objectFit="contain" 
-                            className="featureImg"
-                        />
-                    </div>
-                </section>
-
-            </ScrollReveal>
 
             <ScrollReveal>
                 <section id="about-me" className="">
@@ -70,27 +41,8 @@ export default function Home() {
            
             
             <Projects/>
-            
-            
 
-            <section id="contact">
-                <div className="contact-box">
-                    <div className="img-container">
-                        <Image
-                        src={icons.phone}
-                        />
-                    </div>
-                    <p>+421 915 389 823</p>
-                </div>
-                <div className="contact-box">
-                    <div className="img-container">
-                    <Image
-                        src={icons.email}
-                        />
-                    </div>
-                    <p>dominik.kravec0@gmail.com</p>
-                </div>
-            </section>
+            
         </main>
 
     </>

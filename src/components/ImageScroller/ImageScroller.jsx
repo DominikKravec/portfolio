@@ -19,25 +19,18 @@ export default function ImageScroller({ images }) {
     );
   };
 
+  // DEBUG FALLBACK: If this renders, your images array is empty or undefined!
   if (!images || images.length === 0) {
-    return <div>No images</div>;
+    return <div style={{ color: "white", textAlign: "center", padding: "50px", fontSize: "1.5rem" }}>No images provided to scroller</div>;
   }
 
   return (
     <div className="image-scroller">
       <div className="carousel-wrapper">
+        
         <div className="button-wrapper left">
           <button onClick={handlePrev} className="button">
-            <svg
-              className="arrow-icon"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke={`url(#gradient-prev-${currentIndex})`}
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
+            <svg className="arrow-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke={`url(#gradient-prev-${currentIndex})`} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <defs>
                 <linearGradient id={`gradient-prev-${currentIndex}`} x1="0%" y1="0%" x2="100%" y2="0%">
                   <stop offset="0%" stopColor="rgba(255, 64, 102, 1)" />
@@ -48,6 +41,7 @@ export default function ImageScroller({ images }) {
             </svg>
           </button>
         </div>
+
         <div className="carousel-container">
           <div
             className="carousel-inner"
@@ -58,26 +52,18 @@ export default function ImageScroller({ images }) {
                 <Image
                   src={image}
                   alt={`Slide ${index + 1}`}
-                  layout="fill"
-                  objectFit="contain"
+                  fill={true}
+                  style={{ objectFit: "contain" }}
                   className="scroller-image"
                 />
               </div>
             ))}
           </div>
         </div>
+
         <div className="button-wrapper right">
           <button onClick={handleNext} className="button">
-            <svg
-              className="arrow-icon"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke={`url(#gradient-next-${currentIndex})`}
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
+            <svg className="arrow-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke={`url(#gradient-next-${currentIndex})`} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <defs>
                 <linearGradient id={`gradient-next-${currentIndex}`} x1="0%" y1="0%" x2="100%" y2="0%">
                   <stop offset="0%" stopColor="rgba(255, 64, 102, 1)" />
@@ -88,7 +74,9 @@ export default function ImageScroller({ images }) {
             </svg>
           </button>
         </div>
+
       </div>
+
       <div className="indicators">
         {images.map((_, index) => (
           <button
@@ -97,48 +85,6 @@ export default function ImageScroller({ images }) {
             onClick={() => setCurrentIndex(index)}
           />
         ))}
-      </div>
-      <div className="phone-button-wrapper">
-        <button onClick={handlePrev} className="button">
-          <svg
-            className="arrow-icon"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke={`url(#gradient-phone-prev-${currentIndex})`}
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          >
-            <defs>
-              <linearGradient id={`gradient-phone-prev-${currentIndex}`} x1="0%" y1="0%" x2="100%" y2="0%">
-                <stop offset="0%" stopColor="rgba(255, 64, 102, 1)" />
-                <stop offset="100%" stopColor="rgb(255, 241, 106)" />
-              </linearGradient>
-            </defs>
-            <polyline points="15 18 9 12 15 6"></polyline>
-          </svg>
-        </button>
-        <button onClick={handleNext} className="button">
-          <svg
-            className="arrow-icon"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke={`url(#gradient-phone-next-${currentIndex})`}
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          >
-            <defs>
-              <linearGradient id={`gradient-phone-next-${currentIndex}`} x1="0%" y1="0%" x2="100%" y2="0%">
-                <stop offset="0%" stopColor="rgba(255, 64, 102, 1)" />
-                <stop offset="100%" stopColor="rgb(255, 241, 106)" />
-              </linearGradient>
-            </defs>
-            <polyline points="9 18 15 12 9 6"></polyline>
-          </svg>
-        </button>
       </div>
     </div>
   );
