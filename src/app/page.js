@@ -31,7 +31,10 @@ export default function Home() {
                     <div id="info-container">
                         <div id="info-text-container">
                             <p>
-                            I’m a recent graduate of the Secondary School of Electrotechnical Engineering in Košice, where I studied programming for four years. Next year, I will continue my studies in programming and app development at Masaryk University in Brno. I’m passionate about web and app development, and my projects include both frontend and backend work.
+                            I am currently a student at the Faculty of Informatics at Masaryk University, where I study programming and application development. 
+                            Prior to this, I graduated from the Secondary Technical School of Electrical Engineering in Košice, which also focused on software development. 
+                            Through my academic background and various personal projects, 
+                            I have gained several years of practical programming experience, specializing in both front-end and back-end development.
                             </p>
                         </div>
                     </div>

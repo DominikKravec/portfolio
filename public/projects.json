@@ -31,7 +31,7 @@
         "name": "Todo list",
         "description": "This was the first app I made in React Native. I made to fifamiliarize myself with the way you make apps in this framework. The app serves as a simple todo tracker. It uses an appwrite database to store users and their info. Styling for this app was made with nativewind.",
         "images": [
-            "/images/todo-list.jpg",
+            "/images/Todo_list.png",
             "/images/todo-list_add.jpg",
             "/images/todo-list_pop_up.jpg",
             "/images/todo-list_sign_in.jpg"
