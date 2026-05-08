@@ -173,14 +173,14 @@ main #about-me .heading-container h1 {
 
 main #about-me #info-container #info-text-container {
   margin-top: 2rem;
-  padding: 3rem 8rem;
+  padding: 3rem 4rem;
   background-color: rgba(76, 76, 76, 0.1411764706);
   border-radius: 20px;
 }
 
 main #about-me #info-container #info-text-container p {
   color: var(--font-color);
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: lighter;
 }
 

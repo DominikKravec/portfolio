@@ -3,13 +3,13 @@
 import React from 'react'
 import "./style.css"
 import Image from "next/image";
-import { useRouter } from 'next/navigation';
+/* 1. Import Link from next/link instead of useRouter */
+import Link from 'next/link'; 
 import UsedTechnology from '../UsedTechnology/UsedTechnology';
 
 export default function ProjectCard({project}) {
-
-    const router = useRouter()
-
+    // 2. You no longer need the router here!
+    
     let techs = project.technologies.slice(0, 3)
         
     return (
@@ -19,7 +19,7 @@ export default function ProjectCard({project}) {
                     src={project.images[0]} 
                     alt="project"
                     fill={true}
-                    style={{ objectFit: 'cover' }} /* Replaced deprecated objectFit prop */
+                    style={{ objectFit: 'cover' }} 
                     className="featureImg"
                 />
             </div>
@@ -50,15 +50,12 @@ export default function ProjectCard({project}) {
                 </div>
 
                 <div className="button-container">
-                    <a className="button" 
-                        onClick={() => {
-                            router.push("/project/" + project.id)
-                        }}
-                    >
+                    
+                    <Link href={"/project/" + project.id} className="button">
                         <p>
                             MORE
                         </p>
-                    </a>
+                    </Link>
                 </div>
             </div>
         </div>
