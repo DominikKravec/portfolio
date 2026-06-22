@@ -168,7 +168,6 @@ main #about-me .heading-container h1 {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  width: 18vw;
 }
 
 main #about-me #info-container #info-text-container {
@@ -187,7 +186,7 @@ main #about-me #info-container #info-text-container p {
 @media (max-width: 600px) {
   main {
     width: 100vw;
-    margin-top: 60%;
+    margin-top: 25%;
   }
 
   main #opening-text-phone {
@@ -233,14 +232,24 @@ main #about-me #info-container #info-text-container p {
     text-align: center;
   }
 
+  main #about-me {
+    padding: 0;
+    border-radius: 0;
+  }
+
   main #about-me .heading-container h1 {
     text-align: center;
     width: 100vw;
   }
 
+  main #about-me #info-container #info-text-container p {
+    font-size: 1.3rem;
+  }
+
   main #about-me #info-container #info-text-container {
     text-align: center;
     padding: 10px 20px;
+    border-radius: 0;
   }
 }
 

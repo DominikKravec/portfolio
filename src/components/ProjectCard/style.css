@@ -9,7 +9,12 @@
 @media (max-width: 768px) {
   .project-card {
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
+  }
+
+  .project-info{
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -30,7 +35,7 @@
 @media (max-width: 768px) {
   .img-container {
     width: 100%;
-    min-height: 30vh;
+    min-height: 50vh;
   }
 }
 
@@ -55,7 +60,9 @@
 
 @media (max-width: 600px) {
   .project-info .project-technologies {
-    display: none;
+    display: flex;
+    align-content: center;
+    justify-content: center;
   }
 }
 
@@ -79,6 +86,10 @@
 @media (max-width: 600px) {
   .project-info .desc {
     display: none;
+  }
+
+  .project-title p {
+    text-align: center;
   }
 }
 
